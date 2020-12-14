@@ -1,0 +1,23 @@
+.form-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-container .row {
+  width: 33%;
+  max-width: 330px;
+}
+.input-field {
+  width: 100%;
+}
+.MuiInputBase-input {
+  font-size: 0.9rem !important;
+}
+
+.form-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+}

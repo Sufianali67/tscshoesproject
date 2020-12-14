@@ -1,0 +1,43 @@
+{
+  "name": "project-setup",
+  "version": "1.0.0",
+  "description": "nodejs project setup",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm install terser@3.14.1 --prefix client && npm run build --prefix client",
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahxan07/projectSetup.git"
+  },
+  "author": "ahxan07",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahxan07/projectSetup/issues"
+  },
+  "homepage": "https://github.com/ahxan07/projectSetup#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "cloudinary": "^1.23.0",
+    "concurrently": "^5.3.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.9",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.4.13",
+    "nodemon": "^2.0.6",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "request": "^2.88.2",
+    "yarn": "^1.22.10"
+  }
+}
