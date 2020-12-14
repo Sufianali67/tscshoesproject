@@ -1,13 +1,12 @@
 import { connect } from "react-redux";
 import EventBus from "eventing-bus";
 import React, { Component } from "react";
-import Login from "views/login";
-import Signup from "views/signup";
+import Login from "./views/login";
+import Signup from "./views/signup";
 import PrivateRoute from "./PrivateRoute";
 import { createBrowserHistory } from "history";
-import AdminLayout from "layouts/Admin/Admin.jsx";
+import AdminLayout from "./layouts/Admin/Admin.jsx";
 import { ToastContainer, toast } from "react-toastify";
-import Dashboard from "views/dashboard";
 import NotificationAlert from "react-notification-alert";
 import { Router, Route, Switch, Redirect } from "react-router-dom";
 

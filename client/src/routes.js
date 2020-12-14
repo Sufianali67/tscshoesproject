@@ -2,21 +2,12 @@
 import Billing from "./views/Billing";
 import Cart from "./views/Cart";
 import Shoes from "./views/categories/Shoes";
-import Dashboard from "./views/dashboard";
 import Orders from "./views/Orders";
 import PendingUsers from "./views/pendingUsers";
 import AllProducts from "./views/products/AllProducts";
 import UpdatePassword from "./views/updatePassword";
 import UpdateProfile from "./views/updateProfile";
 var routes = [
-  {
-    layout: "/home",
-    name: "hidden",
-    path: "/dashboard",
-    component: Dashboard,
-    icon: "tim-icons icon-chart-pie-36",
-    role: ["admin"],
-  },
   {
     layout: "/home",
     name: "Shoes",

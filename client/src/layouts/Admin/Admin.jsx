@@ -1,9 +1,9 @@
-import routes from "routes.js";
+import routes from "../../routes.js";
 import React, { Component } from "react";
-import logo from "assets/img/react-logo.png";
+import logo from "../../assets/img/react-logo.png";
 import PerfectScrollbar from "perfect-scrollbar";
-import Sidebar from "components/Sidebar/Sidebar.jsx";
-import AdminNavbar from "components/Navbars/AdminNavbar.jsx";
+import Sidebar from "../../components/Sidebar/Sidebar.jsx";
+import AdminNavbar from "../../components/Navbars/AdminNavbar.jsx";
 import { connect } from "react-redux";
 import { Route, Switch } from "react-router-dom";
 
