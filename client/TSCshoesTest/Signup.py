@@ -4,13 +4,13 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-chromdriver = "C:/Users/Quence/Desktop/Selenium/chromedriver_win32/chromedriver.exe"
+chromdriver = "/Users/sufianali/tscshoesproject/client/Drivers/chromedriver"
 driver = webdriver.Chrome(chromdriver)
 driver.get("http://localhost:3000/signup")
 driver.maximize_window()
 
 #Data to populate the form
-name = "noman20"
+name = "shahbazsharif"
 Email = (name+"@gmail.com")
 Password = "123"
 Con_Password = "123"
@@ -43,7 +43,7 @@ c_password.send_keys(Con_Password)
 
 #Signup button
 
-signup_btn = driver.find_element_by_name("signup_btn")
+signup_btn = driver.find_element_by_xpath("//button[contains(text(),'Signup')]")
 signup_btn.click()
 
 #Validation for the entering code
@@ -57,5 +57,5 @@ verificationcode.click()
 verificationcode.send_keys(emailverificationcode)
 
 #Send button
-sendbtn = driver.find_element_by_id("sendbtn")
+sendbtn = driver.find_element_by_xpath("//button[contains(text(),'Send')]")
 sendbtn.click()

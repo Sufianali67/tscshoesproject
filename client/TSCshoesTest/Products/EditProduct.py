@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 
-chromdriver = "C:/Users/Quence/Desktop/Selenium/chromedriver_win32/chromedriver.exe"
+chromdriver = "/Users/sufianali/tscshoesproject/client/Drivers/chromedriver"
 driver = webdriver.Chrome(chromdriver)
 driver.get("http://localhost:3000/admin/login")
 driver.maximize_window()
@@ -19,18 +19,18 @@ shoequantity = "10"
 #Email field
 emailfield = driver.find_element_by_name("email")
 emailfield.click()
-emailfield.send_keys(Keys.CONTROL + "a")
+emailfield.send_keys(Keys.COMMAND+ "a")
 emailfield.send_keys(Email)
 
 #passwordfield
 
 passwordfield = driver.find_element_by_name("password")
 passwordfield.click()
-passwordfield.send_keys(Keys.CONTROL + "a")
+passwordfield.send_keys(Keys.COMMAND+ "a")
 passwordfield.send_keys(Password)
 
 #Login Button
-loginbtn = driver.find_element_by_id("loginbtn")
+loginbtn = driver.find_element_by_xpath("//button[contains(text(),'Login')]")
 loginbtn.click()
 
 
@@ -49,15 +49,15 @@ edit.click()
 
 #Edit the form
 name = driver.find_element_by_name("name")
-name.send_keys(Keys.CONTROL + "a")
+name.send_keys(Keys.COMMAND+ "a")
 name.send_keys(shoename)
 
 price = driver.find_element_by_name("price")
-price.send_keys(Keys.CONTROL + "a")
+price.send_keys(Keys.COMMAND + "a")
 price.send_keys(shoeprice) 
 
 quantity= driver.find_element_by_name("quantity")
-quantity.send_keys(Keys.CONTROL + "a")
+quantity.send_keys(Keys.COMMAND + "a")
 quantity.send_keys(shoequantity) 
 
 #Save changes

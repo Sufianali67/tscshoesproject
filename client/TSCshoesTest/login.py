@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-chromdriver = "C:/Users/Quence/Desktop/Selenium/chromedriver_win32/chromedriver.exe"
+
+chromdriver = "/Users/sufianali/tscshoesproject/client/Drivers/chromedriver"
 driver = webdriver.Chrome(chromdriver)
 driver.get("http://localhost:3000/admin/login")
 driver.maximize_window()
@@ -25,5 +26,5 @@ passwordfield.send_keys(Keys.CONTROL + "a")
 passwordfield.send_keys(Password)
 
 #Login Button
-loginbtn = driver.find_element_by_id("loginbtn")
+loginbtn = driver.find_element_by_xpath("//button[contains(text(),'Login')]")
 loginbtn.click()

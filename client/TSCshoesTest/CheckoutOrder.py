@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-chromdriver = "C:/Users/Quence/Desktop/Selenium/chromedriver_win32/chromedriver.exe"
+chromdriver = "/Users/sufianali/tscshoesproject/client/Drivers/chromedriver"
 driver = webdriver.Chrome(chromdriver)
 driver.get("http://localhost:3000/home/shoes")
 driver.maximize_window()
